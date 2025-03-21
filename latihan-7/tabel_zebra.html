@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabel zebra</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>tabel zebra</h1>
+    <table>
+        <thead>
+            <P>untuk tabel bergaris zebra,gunakan pemilih nth-child dan tambahkan warna latar belakang ke semua baris tabel genap (atas ganjil):</P>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Umur</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Arya</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Lisa</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rahul</td>
+                <td>27</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
